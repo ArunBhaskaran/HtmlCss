@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+       .container
+        {
+            height: 1000px;
+            background-color: gray;
+        }
+        .row
+        {
+            
+         border: white;
+         padding-left: 5%;
+         width: 1100px;
+        
+           
+        }
+        #coll1
+        {
+            border: solid gray 10px;
+            background-color:  gray;
+            height: 900px;
+            width: 100%;
+        }
+        #coll2
+        {
+            border: solid gray 10px;
+            background-color: gray;
+            height: 900px;
+            width: 100%;
+        }
+        #coll3
+        {
+           border: solid gray 10px;
+            background-color:gray;
+            height: 900px;
+            width: 100%;
+        }
+        .s1
+        {  
+            background-color: rgb(248, 105, 105);
+            height: 650px;
+            border: solid white 10px;
+          
+                    }
+                    .s2
+                    {
+                        background-color: rgb(248, 105, 105);
+            height: 650px;
+            border: solid white 10px;
+                    }
+        .s3
+        {
+            background-color: rgb(248, 105, 105);
+            height: 650px;
+            border: solid white 10px;
+        }
+        #button
+        {   margin-left: 130px;
+            background-color: black;
+            color:goldenrod;
+            border:1px solid blue;
+            width: 100px;
+           height: 30px;
+        }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="casejs.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4" id="coll1">
+                <div class="s1">
+                <img src="Capture.PNG" alt="aa" style="padding-left: 30px;">
+                <br>
+                <h3 style="color: white; padding-left: 30px;">Become A Member</h3><br>
+                <br>
+                <p style="color: white; padding-left: 30px;"> Welcome to the Super 8 Film<br> society. We are a group of film<br> enthusiasts who meet up each<br> 
+                    month to watch old movies on<br> film, in our own private cinema.<br>
+                     We also create our own short film<br> each year, which is entered into<br> film competitions worldwide.</p>
+                    </div>
+            </div>
+        
+        <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4" id="coll2">
+            <div class="s2">
+                <div class="b1" style="padding-left: 30px;" >
+            <h2 style="color: white;">Setting</h2><br>
+            <div>
+            <font style="color: white;">UserName:</font><br>
+            <input type="text" name="user" id="user" placeholder="user" onblur="username()"> </div>
+            <br>
+            <label id="uu"></label>
+            <br>
+            <div><font style="color: white;">EmailId:</font><br>
+                <input type="email" name="eid" id="email" placeholder="@mail" onblur="email()"></div>
+                <br>
+                <label id="em"></label>
+                    <br>
+                <div><font style="color: white;">Password:</font><br>
+                    <input type="password" name="password" placeholder="password" id="pass" onblur="password()"></div>
+                    <br>
+                    <label id="ps"></label>
+                    <br>
+                <div><font style="color: white;">ConfirmPassword:</font><br>
+                    <input type="password" name="cpassword" placeholder="confirm" id="cpass" onblur="cpassword()"></div><br>
+                    <label id="cp"></label>
+                    
+    
+                </div>
+                </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4" id="coll3">
+            <div class="s3">
+                <div class="b2" style="padding-left: 30px;" >
+            <h2 style="color: white;">Profile</h2><br>
+        <div><font style="color: white;">Birthday:</font><br>
+            <input type="date" name="bith" placeholder="dd/mm/yyyy" onblur="date()" id="dt"></div>
+            <label id="lb"></label>
+            <br>
+            <br>
+            <br>
+        <div><font style="color: white;">ShortBio:</font><br>
+            <textarea type="bio" name="tboi" placeholder="bio only 140 chars" id="bio" size=10px onkeyup="Countword()"></textarea><br></div>
+            <br>
+            
+            <label id="count"></label>
+            <div>
+            <input type="button" name="btn" value="Register" id="button"></div>
+
+        </div>
+        </div>
+        </div>
+       
+        </div>
+        
+        </div>
+</body>
+</html>
