@@ -1,0 +1,19 @@
+
+body{
+    background-image: url("image/bg.jpg");
+    
+  
+}
+.main{
+    margin-left: 10%;
+}
+
+.ss {
+    
+    background-color: gainsboro;
+    display: grid;
+    width: 72%;
+    margin-left:10%;
+    grid-template-columns: 90px 90px 90px 90px 90px;
+    
+}
