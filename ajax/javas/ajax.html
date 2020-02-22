@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #aa
+        {
+        position: absolute;  
+          
+        }
+        #bb
+        {
+        position: absolute;
+        left: 400px;
+        }
+        #cc
+        {
+              position: absolute;
+              left: 800px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+
+</head>
+<body>
+    
+    <nav>
+        <img src="image\maker-logo.png" alt="not here">
+        <center ><a href="js.html" class="Current">Home</a>
+            <a href="js1.html">Route</a>
+            <a href="js2.html">Toys</a></center>
+        <hr size="4px" color="black"> 
+    </nav>   
+        
+    
+    <div id="content">
+        <section id=" container">
+            
+    
+            <h2>Fifteen tone of funs!</h2><br>
+            <div id="aa"><img src="image\home1.jpg" alt="not here"><br>
+            <p>Wiring adds a considerable amount of weight to<br> an aircraft; therefore, researchers are exploring<br> implementing fly-by-wireless solutions. Fly-by-<br>wireless systems are very similar to fly-by-wire, <br>however, instead of using a wired protocol for the<br> physical layer a wireless protocol is employed</p></div>
+            
+            <div id="bb"><img src="image\home2.jpg" alt="not here"><br>
+            <p>The MegaChips MCDP2900 offers seamless <br>conversion of 4K60Hz HDR quality video with<br>end-to-end HDCP2.2 security for media content<br>playback from UltraHDBlu-ray,STB,PC or Game<br>Console on TVs and other large screen displays.</p>
+             </div>
+            <div id="cc"><img src="image\home3.jpg" alt="not here"><br>
+            <p>Enabling everyday life through innovation,<br>MegaChips is a semiconductor leader whose <br>technology transforms the world we live in by<br> helping each one of us achieve healthier, safer <br>and more fulfilling lives</p></div>
+    
+        
+
+</section>
+<script>   
+    $('nav a').on('click',function(e)
+  {
+  e.preventDefault();
+  var url=this.href;
+  var $content=('#content');
+  $.ajax({
+      method= "GET",
+      URL = url,
+      timeout= 2000,
+ // $('#container'). load(url+' #content').hide().fadeIn('slow');
+  });
+});
+  
+     </script>
+</body>
+
+
+</html>
+   
